@@ -1,8 +1,6 @@
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    outline: 2px solid red;
-    outline-offset: -2px;
 
     @media screen and (min-width: 480px) {
         width: 480px;
