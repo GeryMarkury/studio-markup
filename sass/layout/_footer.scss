@@ -1,0 +1,118 @@
+.footer {
+    background-color: var(--bg-color-hero);
+    padding: 60px 0;
+
+
+&__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+&__logo {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+
+
+&-color {
+    color: var(--bg-color-main);
+}}
+
+&__text {
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--bg-color-main);
+    margin-bottom: 20px;
+}
+
+&__socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--bg-color-main);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    background-color: var(--active-color);
+}}
+}
+
+.address {
+
+&__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+&__city {
+    display: block;
+    font-style: normal;
+    line-height: calc(24 / 14);
+    color: var(--bg-color-main);
+}
+
+&__link {
+    font-style: normal;
+    line-height: calc(24 / 14);
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    color: var(--active-color);
+}}
+}
+
+.sighnup__email {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 12px;
+    outline: unset;
+    color: var(--text-color);
+
+
+&:focus {
+    border-color: #fff;
+    color: #fff;
+}}
+
+.sighnup__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--active-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--bg-color-main);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+
+
+&-icon {
+    fill: #fff;
+}}

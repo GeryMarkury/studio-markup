@@ -1,0 +1,31 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+&__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--bg-color-main);
+    color: #afb1b8;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    background-color: var(--active-color);
+    color: var(--bg-color-main);
+}}
+
+&__icon {
+    fill: currentColor;
+}
+}

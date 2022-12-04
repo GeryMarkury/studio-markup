@@ -1,0 +1,101 @@
+.buttons__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.portfolio {
+&__button {
+    display: inline-block;
+    background: var(--buttons-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    padding: 6px 22px;
+    border: none;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    background-color: var(--active-color);
+    color: var(--bg-color-main);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}}
+
+&__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+&__item {
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #eeeeee;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+&:hover .overlay {
+    transform: translateY(0);
+}
+
+&-container {
+    padding: 20px 24px;
+}}
+
+&__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+&__title {
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+&__text {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    color: var(--text-color);
+}
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    display: flex;
+    align-items: center;
+    transition: transform 230ms linear;
+    user-select: none;
+
+
+&__text {
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--bg-color-main);
+}
+}
