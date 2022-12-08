@@ -3,12 +3,24 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+&__btn:hover,
+&__btn:focus {
+    fill: var(--active-color);
+}
+
+    &__btn-close:hover,
+    &__btn-close:focus {
+        fill: var(--active-color);
+    }
 }
 
 @media (max-width: 767px) {
     .menu {
         display: none;
     }
+
+
 }
 
 .menu .link {
@@ -56,8 +68,8 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
+    padding: 48px 40px;
+    background-color: #fff;
     z-index: 999;
 
     transform: translateX(100%);
@@ -84,12 +96,62 @@
 
 .mobile-menu .link {
     display: block;
-    padding: 10px;
-    color: #fff;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47/40);
+    letter-spacing: 0.02em;
+    color: var(--title-color);
     text-decoration: none;
+
+    &.current {
+        color: var(--active-color);
+    }
+}
+
+.mobile-menu-item:not(:last-child),
+.mobile-contacts-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile-contacts-item:first-child {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40/34);
+    letter-spacing: 0.02em;
+    color: var(--active-color);
+}
+
+.mobile-contacts-item:last-child {
+    margin-bottom: 64px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: 0.02em;
 }
 
 .mobile-socials {
     display: flex;
     gap: 20px;
 }
+
+.mobile-social-link {
+    position: relative;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--active-color);
+
+
+&:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 22px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(33, 33, 33, 0.2);
+    transform: translateX(10px);
+    }
+    }
