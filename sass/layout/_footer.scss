@@ -143,6 +143,10 @@
     color: var(--text-color);
     margin-bottom: 20px;
 
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+
     @media screen and (min-width: 1200px) {
         width: 358px;
         margin-right: 12px;

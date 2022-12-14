@@ -119,6 +119,10 @@
     line-height: calc(40/34);
     letter-spacing: 0.02em;
     color: var(--active-color);
+
+    @media screen and (max-width: 479px) {
+            font-size: 26px;
+        }
 }
 
 .mobile-contacts-item:last-child {
@@ -133,25 +137,32 @@
 .mobile-socials {
     display: flex;
     gap: 20px;
-}
 
-.mobile-social-link {
-    position: relative;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        letter-spacing: 0.02em;
-        color: var(--active-color);
-
-
-&:after {
+    &-item:not(:last-child)::after {
     content: "";
     display: inline-block;
     width: 1px;
     height: 22px;
     position: absolute;
-    bottom: 0;
     background: rgba(33, 33, 33, 0.2);
     transform: translateX(10px);
+
+    @media screen and (max-width: 479px) {
+        height: 15px;
     }
+
+    }
+}
+
+.mobile-social-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--active-color);
+
+        @media screen and (max-width: 479px) {
+            font-size: 10px;
+        }
     }
