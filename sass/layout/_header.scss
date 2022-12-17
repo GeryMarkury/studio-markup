@@ -1,15 +1,16 @@
 .header {
     border-bottom: 1px solid #ececec;
+    padding: 16px 0;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
 
 &__container {
     display: flex;
     align-items: center;
-    padding: 16px 0;
-
-    @media  screen and (min-width:768px) {
-        padding: 0;
-    }
 }
 
 &__logo {
@@ -37,7 +38,6 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
-    padding: 21px 0;
     }
     
   @media screen and (min-width:1200px) {
